@@ -1,0 +1,22 @@
+{
+  "name": "bookmarklet",
+  "version": "1.0.0",
+  "description": "Bookmark links to .js file",
+  "main": "bookmarklet.js",
+  "scripts": {
+    "test": "node bookmarklet.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markkazanski/Bookmarklet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markkazanski/Bookmarklet/issues"
+  },
+  "homepage": "https://github.com/markkazanski/Bookmarklet#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
+}
