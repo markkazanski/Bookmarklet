@@ -21,17 +21,22 @@ app.use(express.static('public'))
 
 //serve HTML file GET
 app.get("/", function(req, res) {
-    var connection = mysql.createConnection({
-        host: "localhost",
-        port: 3306,
-      
-        // Your username
-        user: "root",
-      
-        // Your password
-        password: "Arseface04!",
-        database: "bookmarklet_db"
-      });
+    var connection;
+    if(process.env.JAWSDB_URL){
+        connection = mysql.createConnection(process.env.JAWSDB_URL);
+    }else{
+        connection = mysql.createConnection({
+            host: "localhost",
+            port: 3306,
+        
+            // Your username
+            user: "root",
+        
+            // Your password
+            password: "Arseface04!",
+            database: "bookmarklet_db"
+        });
+    }
 
     connection.connect(function(err) {
         if (err) throw err;
