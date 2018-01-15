@@ -2,7 +2,7 @@ var newURL = document.URL;
 console.log("newURL: " + newURL);
 
 $.ajax({
-    url: "https://httpbin.org/post",
+    url: "http://localhost:3000/api/new",
     method: "POST",
     data: {newURL: newURL }
   }).done(function(response) {
