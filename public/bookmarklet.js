@@ -9,7 +9,8 @@ jQuery.ajaxPrefilter(function(options) {
 });
 // =================================================================        
 
-
+//POST
+/*
 $.ajax({
     url: "https://limitless-refuge-66019.herokuapp.com/api/new",
     method: "POST",
@@ -19,3 +20,14 @@ $.ajax({
     alert("Added your page to the database. " + response);
     console.log(response);
   });
+*/
+
+//GET
+$.ajax({
+  url: `https://limitless-refuge-66019.herokuapp.com/api/new?newURL=${newURL}`,
+  method: "GET",
+  crossDomain: true
+}).done(function(response) {
+  alert("Added your page to the database. " + response);
+  console.log(response);
+});
