@@ -6,22 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <title>TEST BOOKMARKLWET DOC</title>
+    <title>Test Bookmarklet</title>
 </head>
 <body>
-    
-    <a href="javascript:(function(){var e=document.body.appendChild(document.createElement('script')).src='https://limitless-refuge-66019.herokuapp.com/bookmarklet.js';})();">Bookmarklet1</a>
+<p>Drag the bookmark below into the bookmark bar.</p>
+<p>Show bookmark bar in Chrome: <strong>Ctrl+Shift+B</strong></p>
 
-    <a href="
-    javascript:void((function(){var e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://limitless-refuge-66019.herokuapp.com/bookmarklet.js');document.body.appendChild(e)})());" >Bookmarklet2</a>
-<br />
+<button style="font-size: 20px;padding: 20px 15px;"> <a href="javascript:(function(){var e=document.body.appendChild(document.createElement('script')).src='https://limitless-refuge-66019.herokuapp.com/bookmarklet.js';})();">Bookmarklet</a> </button>
 
-    <a href="javascript:(function(){var e=document.body.appendChild(document.createElement('script')).src='http://localhost:3000/bookmarklet.js';})();">LOCAL Bookmarklet1</a>
+<p>See preview:</p>
+<p><img src="/bookmarklet.gif"></p>
 
-    <a href="
-    javascript:void((function(){var e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://localhost:3000/bookmarklet.js');document.body.appendChild(e)})());" >LOCAL Bookmarklet2</a>
-
-
+<h3>Instructions:</h3>
+<ol>
+    <li>Add bookmarklet to bookmark bar.</li>
+    <li>Navigate to any website</li>
+    <li>Click "Bookmarklet"</li>
+    <li>See all the bookmarked URLs in JSON form here: <a href="https://limitless-refuge-66019.herokuapp.com/">https://limitless-refuge-66019.herokuapp.com/</a></li>
+    <li>(Avoid clicking bookmarklet when looking at NSFW sites.)</li>
+</ol>
 </body>
 </html>
 
