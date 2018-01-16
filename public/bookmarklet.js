@@ -13,7 +13,9 @@ jQuery.ajaxPrefilter(function(options) {
 $.ajax({
     url: "https://limitless-refuge-66019.herokuapp.com/api/new",
     method: "POST",
+    crossDomain: true;
     data: {newURL: newURL }
   }).done(function(response) {
+    alert("Added your page to the database. " + response);
     console.log(response);
   });
