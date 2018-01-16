@@ -31,7 +31,7 @@ function sendBookmark(){
 
   //POST
   /*
-  $.ajax({
+  jQuery.ajax({
       url: "https://limitless-refuge-66019.herokuapp.com/api/new",
       method: "POST",
       crossDomain: true,
@@ -43,16 +43,16 @@ function sendBookmark(){
   */
 
   //GET
-  $.ajax({
+  jQuery.ajax({
     url: `https://limitless-refuge-66019.herokuapp.com/api/new?newURL=${newURL}`,
     method: "GET",
     crossDomain: true
   }).done(function(response) {
     //alert("Added your page to the database. " + response);
-    $("body").append($("<div id='modal'>"));
-    $("#modal").css({'width':'100%','height':'200px','background-color':'#e44125','position':'fixed','top':'50%','z-index':'999999', 'color':'#eee5d0', 'text-align':'center', 'display':'block'});
-    $("#modal").append(`<h1>Your Link Has Been Added:<br /> ${newURL}</h1>`);
-    setTimeout(function(){$("#modal").remove()}, 6000);
+    jQuery("body").append(jQuery("<div id='modal'>"));
+    jQuery("#modal").css({'width':'100%','height':'200px','background-color':'#e44125','position':'fixed','top':'50%','z-index':'999999', 'color':'#eee5d0', 'text-align':'center', 'display':'block'});
+    jQuery("#modal").append(`<h1>Your Link Has Been Added:<br /> ${newURL}</h1>`);
+    setTimeout(function(){jQuery("#modal").remove()}, 6000);
     console.log(response);
   });
 
