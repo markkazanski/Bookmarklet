@@ -1,6 +1,8 @@
 var newURL = document.URL;
 console.log("newURL: " + newURL);
 
+window.onload = function(){ alert("Window onload fired"); }
+
 //add jQuery if missing
 if(!window.jQuery){
   var script = document.createElement('script');
