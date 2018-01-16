@@ -1,6 +1,13 @@
 var newURL = document.URL;
 console.log("newURL: " + newURL);
 
+//add jQuery if missing
+if(!window.jQuery) alert("YES"){
+  var script = document.createElement('script');
+  script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+  document.getElementsByTagName('head')[0].appendChild(script); 
+}
+
 // ===============CORS CODE=========================================
 jQuery.ajaxPrefilter(function(options) {
   if (options.crossDomain && jQuery.support.cors) {
